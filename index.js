@@ -526,7 +526,7 @@ var sessionAttributes = {};
 const loader = `<span class='loader'><span class='loader__dot'></span><span class='loader__dot'></span><span class='loader__dot'></span></span>`;
 
 const urlPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/gim;
-const $document = document.querySelector("my-web-component").shadowRoot;
+const $document = document.querySelector("my-web-component")?.shadowRoot;
 const $chatbot = $document.querySelector(".chatbot");
 const $chatbotMessageWindow = $document.querySelector(
   ".chatbot__message-window"
